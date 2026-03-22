@@ -1,18 +1,17 @@
-import { Link,useLocation } from "react-router-dom"
-import { useState,useEffect } from "react"
+import { Link} from "react-router-dom"
 function Footer() {
   return (
     <footer>
-      <div class="footer-container">
+      <div className="footer-container">
 
-            <div class="footer-col">
+            <div className="footer-col">
               <Link to={"/"}>
                 <h2>XMart</h2>
               </Link>  
               <p>Your one stop shop for everything you need, delivered fast.</p>
             </div>
 
-            <div class="footer-col">
+            <div className="footer-col">
                 <h4>Shop</h4>
                 <ul>
                     <li><Link to={"/products"}>All Products</Link ></li>
@@ -22,7 +21,7 @@ function Footer() {
                 </ul>
             </div>
 
-            <div class="footer-col">
+            <div className="footer-col">
                 <h4>Help</h4>
                 <ul>
                     <li><Link to={"/"}>FAQ</Link ></li>
@@ -31,20 +30,20 @@ function Footer() {
                     <li><Link to={"/"}>Return Policy</Link ></li>
                 </ul>
             </div>
-            <div class="footer-col">
+            <div className="footer-col">
                 <h4>Follow Us</h4>
                 <ul>
-                    <li><Link to={"/"}>Instagram</Link ></li>
-                    <li><Link to={"/"}>Twitter / X</Link ></li>
-                    <li><Link to={"/"}>Facebook</Link ></li>
-                    <li><Link to={"/"}>YouTube</Link ></li>
+                    <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+                    <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+                    <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+                    <li><a href="https://youtube.com" target="_blank">Youtube</a></li>
                 </ul>
             </div>
 
         </div>
-        <div class="footer-bottom">
+        <div className="footer-bottom">
             <p>© 2024 XMart. All rights reserved.</p>
-            <div class="footer-bottom-links">
+            <div className="footer-bottom-links">
                 <Link to={"/"}>Privacy Policy</Link >
                 <Link to={"/"}>Terms of Service</Link >
             </div>
