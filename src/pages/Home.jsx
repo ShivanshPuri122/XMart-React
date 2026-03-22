@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import SearchBar from "../components/Searchbar";
 import CategoryGrid from "../components/CategoryGrid";
-
+import OfferBanner from "../components/OfferBanner";
 function Home() {
   return (
     <div>
@@ -15,6 +15,7 @@ function Home() {
         </div>
       </section>
       <CategoryGrid />
+      <OfferBanner />
     </div>
   );
 }
