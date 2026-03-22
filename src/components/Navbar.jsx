@@ -1,8 +1,12 @@
 import { Link , useLocation } from "react-router-dom";
-
+import { useState,useEffect } from "react";
 function Navbar(){
     const location=useLocation();
-
+    const [cartCount,setCartCount]=useState(0);
+    useEffect(function(){
+        const cart=JSON.parse(localStorage.getItem("cart"))||[];
+        setCartCount(cart.length)
+    },[]);
     function navClass(path) {
         return location.pathname === path ? "active" : "";
     }
@@ -25,7 +29,7 @@ function Navbar(){
                         <Link to={"/account"} className={navClass("/account")}>Account</Link>
                     </li>
                     <li>
-                        <Link to={"/cart"} className={navClass("/cart")}>Cart</Link>
+                        <Link to={"/cart"} className={navClass("/cart")}>Cart{cartCount>0 &&(<span className="cart-count">{cartCount}</span>)}</Link>
                     </li>
                 </ul>
             </nav>
