@@ -109,3 +109,102 @@ nav ul li a:hover {
     border-radius: 50%;
     margin-left: 4px;
 }
+/* ================================
+   FOOTER
+================================ */
+footer {
+    background-color: var(--gray-light);
+    color: var(--gray-dark);
+    border-top: 1px solid var(--gray-mid);
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 40px;
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 60px 40px;
+}
+a{
+    text-decoration: none;
+}
+.footer-col  h2 {
+    color: var(--black);
+    font-size: var(--font-size-base);
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.footer-col h4 {
+    color: var(--black);
+    font-size: var(--font-size-small);
+    font-weight: 700;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.footer-col p {
+    font-size: var(--font-size-small);
+    color: var(--text-muted);
+    line-height: 1.7;
+}
+
+.footer-col ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-col ul li a {
+    text-decoration: none;
+    color: var(--text-muted);
+    font-size: var(--font-size-small);
+    transition: var(--transition);
+}
+
+.footer-col ul li a:hover {
+    color: var(--black);
+}
+
+.footer-bottom {
+    font-size: var(--font-size-small);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 20px 40px;
+    color: var(--text-muted);
+    border-top: 1px solid var(--gray-mid);
+    letter-spacing: 0.5px;
+}
+
+.footer-bottom-links {
+    display: flex;
+    gap: 24px;
+}
+
+.footer-bottom-links a {
+    text-decoration: none;
+    transition: var(--transition);
+    color: var(--text-muted);
+}
+
+.footer-bottom-links a:hover {
+    color: var(--black);
+}
+
+.page-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
